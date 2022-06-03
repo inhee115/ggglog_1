@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+@import url(https://cdn.jsdelivr.net/npm/fullpage.js@2.9.4/dist/jquery.fullpage.min.js);
+
+/* font */
+/* @font-face {
+    font-family: "Roboto";
+    src: url(../font/Roboto/Roboto-Bold.ttf);
+    src: url(../font/Roboto/Roboto-Light.ttf);
+    src: url(../font/Roboto/Roboto-Medium.ttf);
+    src: url(../font/Roboto/Roboto-Regular.ttf);
+    src: url(../font/Roboto/Roboto-Thin.ttf);
+
+} */
+@font-face {
+    font-family: "Pretendard";
+    src: url(../font/Pretendard/Pretendard-Bold.otf);
+    src: url(../font/Pretendard/Pretendard-Light.otf);
+    src: url(../font/Pretendard/Pretendard-Medium.otf);
+    src: url(../font/Pretendard/Pretendard-Regular.otf);
+    src: url(../font/Pretendard/Pretendard-SemiBold.otf);
+    src: url(../font/Pretendard/Pretendard-Thin.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+ol,ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #222;
+}
+img,svg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+body{
+    font-family: "Pretendard";
+    font-size: 100%;
+    color: #222;
+
+
+
+    /* 스티키 사용시 너비값 */
+    overflow-x: hidden;
+    max-width: 100%;
+    height: auto;
+}
+
+
+#kv_masking{
+    display: none;
+}
+
+@media (max-width:1599px){
+    html,body{
+        font-size: 90%;
+    }
+}
+@media (max-width:1349px){
+    html,body{
+        font-size: 100%;
+    }
+}
+@media (max-width:959px){
+    html,body{
+        font-size: 80%;
+    }
+}

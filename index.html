@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script> 
+    <script src="./js/script.js"></script>
+
+    <title>공간기록</title>
+
+</head>
+<body>
+    <div id="wrap">
+        <!-- gsap -->
+        <canvas id="kv_masking"></canvas>
+
+        <!-- banner 영역 -->
+        <section class="banner section">
+            <!-- header 영역 -->
+            <header class="header-area">
+                <div class="header-logo">
+                    <a href="#none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="138" height="21" viewBox="0 0 138 21">
+                            <title>공간기록</title>
+                            <path d="M23,0v3v18h-3V3H0V0h20H23z M59,0H39v3h20v18h3V3V0H59z M98,0H78v3h20v18h3V3V0H98z M117,3h21V0h-21V3z M117,12h21V9h-21V12 z M117,21h21v-3h-21V21z"></path>
+                        </svg>
+                    </a>
+                </div>
+
+
+                <ul class="menu">
+                    <li class="menu-head">
+                        <div class="menu-in-btn">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </li>
+                    <li class="menu-tab">
+                        <a href="#none">About</a>
+                    </li>
+                    <li class="menu-tab">
+                        <a href="#none">Brand</a>
+                    </li>
+                    <li class="menu-tab">
+                        <a href="#none">Cases</a>
+                    </li>
+                    <li class="menu-tab">
+                        <a href="#none">News</a>
+                    </li>
+                    <li class="menu-tab">
+                        <a href="#none">Contact</a>
+                    </li>
+                </ul>
+
+                <ul class="menu-btn">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+
+            </header>
+
+            <!-- banner 스와이퍼 -->
+            <div class="banner_mask swiper mySwiper">
+                <div class="banner_slider swiper-wrapper">
+                  <div class="in-slider fi swiper-slide"></div>
+                  <div class="in-slider se swiper-slide"></div>
+                  <div class="in-slider th swiper-slide"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+        </section>
+
+
+        <!-- sec-1 -->
+        <section class="sec-1 section">
+            <div class="container">
+                <div class="sec-1_l">
+                    <h1 class="title" data-aos="fade-right" data-aos-duration="1500" data-aos-offset="200">About _</h1>
+
+                    <div class="sec-1_txt" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300">
+                        <h3 class="txt-head">
+                            공간기록은 공간에<br>
+                            물음을 던지고 답을 찾아가는<br>
+                            과정의 기록입니다<br>
+                        </h3>
+                        <div class="txt-small">
+                            <p>
+                                공간기록은 공간에<br>
+                                물음을 던지고 답을 찾아가는<br>
+                                과정의 기록입니다<br>
+                                물체가 존재 할 수 있는 빈 곳에,<br>
+                                어떠한 용도가 될 것인지, 누구를 위해서 사용될 것인지
+                            </p>
+                            <p>
+                                더 좋은 공간을 위해<br>
+                                끊임없이 물음을 던지고 답을 찾아갈 것입니다.
+                            </p>
+                            <p>
+                                우리는 건축물이라는 물체를 만들고<br>
+                                이는 사람이 사용 할 수 있는 빈 공간이 됩니다.<br>
+                                빈 공간에서 저마다 새로운 기록이 시작될 것입니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec-1_r">
+                    <div class="sec-1_img"></div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- sec-2 -->
+        <section class="sec-2 section">
+            <div class="container">
+                <div class="sec-2_l">
+                    <h1 class="title" data-aos="fade-right" data-aos-duration="1500" data-aos-offset="200">Brand _</h1>
+                </div>
+
+                <div class="sec-2_r">
+                    <div class="sec-2_txt" data-aos="fade-up" data-aos-duration="1200" data-aos-offset="300">
+                        <h3 class="txt-head">
+                            공간에 대한 철학을 이야기 합니다
+                        </h3>
+                        <div class="txt-b">
+                            <p class="txt-small">
+                                공간기록이 만들어 낸 빈 공간에는 공간기록과 클라이언트의<br>
+                                수많은 가치있는 이야기들이 새롭게 기록되어져 담깁니다.
+                            </p>
+                            <p class="txt-small">
+                                공간기록 종합건설, 건축사사무소 공간기록,<br>
+                                스페이스로그는 공간에 대한 같은 철학과 목표를 가지고<br>
+                                각자의 분야에서 전문성 있는 브랜드로 꾸준히 성장하고 있습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- sec-3 -->
+        <section class="sec-3 section">
+            <div class="container">
+                <div class="sticky-warpper">
+                    <div class="content">
+                        <div class="content-inner">
+                            <svg class="shape box1">
+                                <rect class="shape"/>
+                            </svg>
+                            <h1 class="title">Cases _</h1>
+                            <svg class="shape box2">
+                                <rect class="shape"/>
+                            </svg> 
+                        </div>
+                    </div>
+
+                    <div class="sticky-inner box1">
+                        <img src="./img/sec-3_1.jpg" alt="">
+                    </div>
+                    <div class="sticky-inner box2">
+                        <img src="./img/sec-3_2.jpg" alt="">
+                    </div>
+                    <div class="sticky-inner box3">
+                        <img src="./img/sec-3_3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- sec-4 -->
+        <section class="sec-4 section">
+            <div class="container">
+                <h1 class="title" data-aos="fade-right" data-aos-duration="1500" data-aos-offset="200">News _</h1>
+                
+                <div class="more-box" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="400">
+                    <p class="more-txt">VIEW MORE +</p>
+                </div>
+                
+                
+                <!-- sec-4 스와이퍼 -->
+                <div class="sec-4_swiper" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="400">
+                    <div class="sec-4_mask swiper mySwiper">
+                        <div class="sec-4_slider swiper-wrapper">
+                            <div class="in-slider fi swiper-slide">
+                                    <div class="content">
+                                        <div class="img-box">
+                                            <img src="./img/sec-4_1.jpg" alt="">
+                                        </div>
+                                        <div class="txt-box">
+                                                <p class="head-txt">ㄱㄱㄱㄹ ㅣ 공간기록</p>
+                                                <span class="inner-txt">
+                                                    포트폴리오 - 전라북도 전주 상가주택
+                                                </span>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="in-slider se swiper-slide">
+                                    <div class="content">
+                                        <div class="img-box">
+                                            <img src="./img/sec-4_2.jpg" alt="">
+                                        </div>
+                                        <div class="txt-box">
+                                                <p class="head-txt">ㄱㄱㄱㄹ ㅣ 공간기록</p>
+                                                <span class="inner-txt">
+                                                    포트폴리오 - 전라북도 전주 전원주택
+                                                </span>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="in-slider th swiper-slide">
+                                    <div class="content">
+                                        <div class="img-box">
+                                            <img src="./img/sec-4_3_1.jpg" alt="">
+                                        </div>
+                                        <div class="txt-box">
+                                            <p class="head-txt">ㄱㄱㄱㄹ ㅣ 공간기록 해설영상</p>
+                                            <span class="inner-txt">
+                                                ‘commentary’ - 전라북도 임실 전원주택
+                                            </span>
+                                </div>
+                                    </div>
+                            </div>
+                            <div class="in-slider fo swiper-slide">
+                                    <div class="content">
+                                        <div class="img-box">
+                                            <img src="./img/sec-4_4.jpg" alt="">
+                                        </div>
+                                        <div class="txt-box">
+                                                <p class="head-txt">ㄱㄱㄱㄹ ㅣ 공간기록 브랜드 영상</p>
+                                                <span class="inner-txt">
+                                                    2022
+                                                </span>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="in-slider fif swiper-slide">
+                                    <div class="content">
+                                        <div class="img-box">
+                                            <img src="./img/sec-4_5.jpg" alt="">
+                                        </div>
+                                        <div class="txt-box">
+                                                <p class="head-txt">ㄱㄱㄱㄹ ㅣ 공간기록 해설영상</p>
+                                                <span class="inner-txt">
+                                                    ‘commentary’ - 충남 부여 전원주택
+                                                </span>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="in-slider six swiper-slide">
+                                    <div class="content">
+                                        <div class="img-box">
+                                            <img src="./img/sec-4_6.jpg" alt="">
+                                        </div>
+                                        <div class="txt-box">
+                                                <p class="head-txt">ㄱㄱㄱㄹ ㅣ 공간기록</p>
+                                                <span class="inner-txt">
+                                                    포트폴리오 - 전북 군산 카페 라 파르
+                                                </span>
+                                        </div>
+                                    </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+          
+            </div>
+        </section>
+
+
+        <!-- sec-5 -->
+        <section class="sec-5 section">
+            <div class="container">
+                <div class="sec-5_l">
+                    <h1 class="title" data-aos="fade-right" data-aos-duration="1500" data-aos-offset="200">Contact _</h1>
+                    
+                    <div class="sec-5_l-inner"  data-aos="fade-up" data-aos-duration="1500" data-aos-offset="300">
+                        <p class="txt-top">
+                            당신의 집에 대한 이야기를<br>
+                            들려주세요
+                        </p>
+                        
+                        <div class="txt-bottom">
+                            <div class="bottom-l">
+                                <h1>SEOUL OFFICE</h1>
+                                <p>서울특별시 강남구 테헤란로 230 인호IP빌딩 3층<br>
+                                    230, Teheran-ro, Gangnam-gu, Seoul, Republic of Korea</p>
+                                <span>02.553.1554</span>
+                            </div>
+                            <div class="bottom-r">
+                                <h1>IKSAN OFFICE</h1>
+                                <p>전라북도 익산시 무왕로 1478 선영빌딩 3층<br>
+                                    1478, Muwang-ro, Iksan-si, Jeollabuk-do, Republic of Korea</p>
+                                <span>02.553.1553</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sec-5_r">
+                    <div class="txt-box" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="300">
+                        <div class="inner-txt">
+                            <p>성함</p>
+                            <input type="text" placeholder="이름을 입력해주세요">
+                        </div>
+                        <div class="inner-txt">
+                            <p>연락처</p>
+                            <input type="text" placeholder="연락처를 입력해주세요">
+                        </div>
+                        <div class="inner-txt">
+                            <p>이메일</p>
+                            <input type="text" placeholder="이메일 주소를 입력해주세요">
+                        </div>
+                        <div class="inner-txt radio">
+                            <p>방문상담</p>
+                            <div class="input-box">
+                                <div class="radio-box">
+                                    <input type="radio" id="ra_1" name="office" checked>
+                                    <label for="ra_1">
+                                        <a href="#none">서울본사</a>
+                                    </label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio" id="ra_2" name="office">
+                                    <label for="ra_2">
+                                        <a href="#none">익산지사</a>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inner-txt">
+                            <p>예산범위</p>
+                            <input type="text" placeholder="예산범위를 입력해주세요 ex) 2억 3천">
+                        </div>
+                        <div class="inner-txt box">
+                            <p>기타 세부내용</p>
+                            <span>(건축 예정지, 건축 희망시기 등)</span>
+                            <div class="input full msg">
+                                <textarea class="basic" name="" placeholder="" onfocus="this.placeholder=''" onblur="this.placeholder=''" required=""></textarea>
+                            </div>
+                        </div>
+                        <div class="input-bottom">
+                            <input type="checkbox" id="ch">
+                            <label for="ch">개인정보 수집 및 이용에 동의합니다</label>
+                        </div>
+                        <button class="sec-5_btn">
+                            <a href="#none">문의하기</a>
+                        </button>
+        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- footer -->
+        <section class="footer section">
+            <div class="container">
+                    <div class="footer-t">
+                        <h1>빈 공간에 가치를 담다 _</h1>
+                        <div class="btn-box">
+                            <a href="#none">인스타그램</a>
+                            <a href="#none">블로그</a>
+                            <a href="#none">유튜브</a>
+                            <a href="#none">노션</a>
+                        </div>
+                    </div>
+
+                    <div class="footer-b">
+                        <div class="txt-t">
+                            <div class="txt-t_l">
+                                <span class="title">공간기록 ⓒ 2022</span>
+                                <!-- <div class="box-ico">
+                                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.9629 52.1839L36.7809 31.3659C38.5383 29.6085 41.3875 29.6085 43.1449 31.3659L63.9629 52.1839" stroke="#C2CCDE" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div> -->
+                            </div>
+                            <div class="txt-t_r">
+                                <a href="#none">개인정보처리방침</a>
+                            </div>
+                        </div>
+
+                        <div class="txt-b">
+                            <div class="txt-b_t">
+                                <p>TEL : 1544-1553 </p>
+                                <p>FAX : 02-501-1553</p>
+                                <p>hello@ggglog.com</p>
+                            </div>
+                            <div class="txt-b_b">
+                                <p>서울특별시 강남구 테헤란로 230 인호 IP 빌딩 3층</p>
+                                <p>사업자등록번호 866-81-01126</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+        </section>
+    </div>
+</body>
+</html>
