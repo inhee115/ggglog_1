@@ -1228,18 +1228,84 @@
 }
 
 
-@media (max-width:599px){
+@media (max-width:500px){
     .title{
         font-size: 6rem;
     }
 
 
+    .sec-1 .container{
+        margin-bottom: 0;
+    }
     .sec-1_txt .txt-head,
     .sec-2_r .txt-head{
+        font-size: 2.2rem;
+    }
+    .sec-1_l{
+        padding: 80px 30px 0;
+    }
+    .sec-1_txt .txt-head{
+        margin-top: 70px;
+    }
+    .sec-1_txt .txt-small{
+        margin-top: 50px;
+    }
+    .sec-1_txt .txt-small p{
+        margin-bottom: 15px;
+    }
+    .sec-1_r{
+        padding: 50px 30px 40px;
+    }
+    .sec-1_r .sec-1_img{
+        padding: 0;
+        background-position: center;
+        height: 300px;
+    }
+
+
+    .sec-2 .title{
+        padding: 80px 30px 0;
+    }
+    .sec-2_r .txt-b{
+        margin-top: 60px;
+    }
+    .sec-2_r .txt-b p{
+        margin-top: 0;
+    }
+    .sec-2_r .txt-b p:first-child{
+        margin-bottom: 15px;
+    }
+
+
+    .sec-4 .container,
+    .sec-5 .container{
+        padding: 80px 30px 0;
+    }
+    .sec-4 .title{
+        margin-bottom: 50px;
+    }
+
+
+    .sec-5_l-inner{
+        margin-top: 60px;
+    }
+    .sec-5_l .txt-top{
+        margin-top: 0;
         font-size: 2.5rem;
     }
-    .sec-1_txt .txt-small p,
-    .sec-2_r .txt-b{
-        font-size: 0.9rem;
+    .sec-5_l .txt-bottom{
+        margin-top: 35px;
     }
+
+
+    .footer-t .btn-box{
+        margin-right: -10px;
+    }
+    .footer-t .btn-box a{
+        margin-right: 10px;
+    }
+    .footer-b .txt-b p{
+        margin-right: 8px;
+    }
+
 }
