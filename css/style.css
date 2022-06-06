@@ -1304,6 +1304,8 @@
     .footer-t .btn-box a{
         margin-right: 10px;
     }
+    .footer-b .txt-b_b{
+        flex-direction: column;
     .footer-b .txt-b p{
         margin-right: 8px;
     }
