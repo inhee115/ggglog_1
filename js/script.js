@@ -21,8 +21,31 @@ $(document).ready(function(){
       prevEl: ".swiper-button-prev",
     },
   });
-
   
+  
+  //contact btn
+  //방문상담
+  $('.sec-5_r label[for="ra_1"] a').click(function(){
+    $('.sec-5_r label[for="ra_1"] .btn-inner').css({
+      'opacity':'1'
+    });
+    $('.sec-5_r label[for="ra_2"] .btn-inner').css({
+      'opacity':'0'
+    });
+  });
+  $('.sec-5_r label[for="ra_2"] a').click(function(){
+    $('.sec-5_r label[for="ra_2"] .btn-inner').css({
+      'opacity':'1'
+    });
+    $('.sec-5_r label[for="ra_1"] .btn-inner').css({
+      'opacity':'0'
+    });
+  });
+  //개인정보
+  $('.sec-5_r .input-bottom label a').click(function(){
+    $('.sec-5_r .input-bottom label .btn-inner').toggleClass('active');
+  });
+
 
   media();
   function media(){
