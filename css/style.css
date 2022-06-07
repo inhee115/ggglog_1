@@ -587,10 +587,10 @@
 }
 .sec-5_r .input-bottom label .btn-inner span:first-child{
     position: absolute;
-    width: 6px;
+    width: 7px;
     height: 3px;
     background-color: #222;
-    top: 72%;
+    top: 73%;
     left: 20%;
     transform: rotate(45deg) translate(-50%,-50%);
 }
