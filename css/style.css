@@ -1229,6 +1229,15 @@
 
 
 @media (max-width:500px){
+    
+    .banner section,
+    .sec-1 .container,
+    .sec-2 .container,
+    .sec-3 .container,
+    .sec-4 .container{
+        width: 100%;
+    }
+    
     .title{
         font-size: 6rem;
     }
