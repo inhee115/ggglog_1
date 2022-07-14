@@ -138,16 +138,18 @@
     font-size: 6.857rem;
     font-weight: bold;
 }
+.container{
+    width: 100vw;
+}
 
 /* sec-1 */
 .sec-1 .container{
-    width: 100vw;
-    height: 100vh;
     display: flex;
 }
 .sec-1_l{
     width: 50%;
-    padding: 100px 0 0 60px;
+    padding: 75px 0 50px 60px;
+    height: 100vh;
 }
 .sec-1_txt .txt-head{
     font-size: 3rem;
@@ -182,8 +184,6 @@
 
 /* sec-2 */
 .sec-2 .container{
-    width: 100vw;
-    height: 100vh;
     background: url(../img/sec-2.jpg) no-repeat left;
     background-size: cover;
 
@@ -194,16 +194,15 @@
 }
 .sec-2_l{
     width: 50%;
-    height: auto;
+    height: 100vh;
 }
 
 .sec-2_r{
     width: 50%;
-    /* height: 100vh; */
     background-color: #fff;
-}
-.sec-2_r .sec-2_txt{
-    padding: 350px 0 0 130px;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
 }
 .sec-2_r .txt-head{
     font-size: 3rem;
@@ -220,9 +219,6 @@
 
 
 /* sec-3 */
-.sec-3 .container{
-    width: 100vw;
-}
 .sec-3 .content-inner{
     width: 100vw;
     height: 100vh;
@@ -231,7 +227,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* opacity: 1; */
 }
 /* sec-3 sticky */
 .sec-3 .sticky-warpper{
@@ -329,13 +324,11 @@
 
 /* sec-4 */
 .sec-4 .container{
-    width: 100vw;
     /* height: 100vh; */
     overflow: hidden;
-    padding: 100px 60px 0;
+    padding: 100px 60px;
 }
 .sec-4 .title{
-    /* padding: 100px 0 0 60px; */
     margin-bottom: 30px;
 }
 
@@ -343,7 +336,6 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    /* margin-bottom: 30px; */
 }
 .sec-4 .more-txt{
     display: inline-block;
@@ -355,14 +347,11 @@
 .sec-4_mask{
     display: flex;
     height: 580px !important;
-    /* margin: 0 60px!important; */
     clear: both;
     
     margin-top: 30px;
 }
 .sec-4_slider .in-slider{
-    /* width: 580px !important; */
-    /* height: 580px; */
     border: 1px solid #000;
 
     display: flex;
@@ -373,19 +362,21 @@
     margin-right: 0;
 }
 .sec-4_slider .content{
-    /* width: 500px;
-    height: 500px; */
     width: 80%;
-    /* height: 500px; */
 
 }
 .sec-4_slider .img-box{
-    /* width: 100%;
-    height: 78%; */
     width: 100%;
     height: 380px;
 
     cursor: pointer;
+    overflow: hidden;
+}
+.sec-4_slider .img-box img{
+    transition: 1s;
+}
+.sec-4_slider .img-box:hover img{
+    transform: scale(1.05);
 }
 .sec-4_slider .txt-box{
     margin-top: 30px;
@@ -411,14 +402,11 @@
 
 /* sec-5 */
 .sec-5 .container{
-    width: 100vw;
-    height: 100vh;
-
     display: flex;
 }
 .sec-5_l{
     width: 50%;
-    padding: 100px 60px 0;
+    padding: 100px 60px;
 }
 .sec-5_l .txt-top{
     font-size: 3.125rem;
@@ -488,7 +476,6 @@
     color: #b4b4b4;
 }
 
-
 /* 라디오버튼 */
 .sec-5_r .inner-txt.radio .input-box{
     width: 200px;
@@ -551,7 +538,7 @@
 
 /* input 글씨 아래로 떨어지게 */
 .input.full{
-    width: 100%;
+    width: 95%;
     float: none;
     margin: 0;
 }
@@ -565,6 +552,7 @@
     outline: none;
     -webkit-appearance: none;
 }
+
 
 /* 개인정보 버튼 */
 .sec-5_r .input-bottom input{
@@ -586,7 +574,7 @@
 }
 .sec-5_r .input-bottom label .btn-inner span:first-child{
     position: absolute;
-    width: 7px;
+    width: 6px;
     height: 3px;
     background-color: #222;
     top: 70%;
@@ -624,7 +612,6 @@
 .sec-5 .input-bottom label{
     font-size: 1.1rem;
 }
-
 
 .sec-5_btn{
     border: 1px solid #b4b4b4;
@@ -692,12 +679,6 @@
 .footer-b .txt-t_l .title{
     font-size: 1.5rem;
 }
-/* .footer-b .txt-t_l .box-ico{
-    width: 30px;
-    height: 30px;
-    fill: #dbdbdb;
-    font-weight: 600;
-} */
 .footer-b .txt-t_r a{
     display: inline-block;
     font-size: 1.25rem;
@@ -744,15 +725,13 @@
     }
 
 
-
+    .sec-1_l{
+        padding: 110px 0 50px 60px;
+    }
     .sec-1_r .sec-1_img{
         padding-bottom: 75%;
     }
 
-    .sec-2_r .sec-2_txt{
-        padding: 350px 0 0 80px;
-
-    }
 
     /* sec-4 */
     .sec-4_mask{
@@ -764,9 +743,6 @@
 
 
     /* sec-5 */
-    .sec-5_l{
-        padding: 100px 30px 0 60px;
-    }
     .sec-5_l .txt-bottom{
         width: 100%;
     }
@@ -777,44 +753,6 @@
     .sec-5_r .txt-box .inner-txt{
         margin-bottom: 20px;
     }
-    /* .sec-5_r .inner-txt.radio .input-box{
-        width: 200px;
-        height: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .sec-5_r .inner-txt.radio .radio-box{
-        position: relative;
-        top: 0;
-        left: 0;
-        width: 100px;
-        height: 10px;
-    }
-    .sec-5_r .inner-txt.radio input{
-        display: none;
-    }
-    
-    .sec-5_r .inner-txt.radio label[for="ra_1"]:before,
-    .sec-5_r .inner-txt.radio label[for="ra_2"]:before{
-        content: "";
-        width: 5px;
-        height: 5px;
-    }
-    .sec-5_r .inner-txt.radio label[for="ra_1"]:after,
-    .sec-5_r .inner-txt.radio label[for="ra_2"]:after{
-        content: "";
-        width: 10px;
-        height: 10px;
-    } */
-    
-     
-    /* .sec-5_r .inner-txt.box span{
-        font-size: 0.9rem;
-    }
-    .sec-5 .input-bottom label{
-        font-size: 1.1rem;
-    } */
     
     .sec-5_btn{
         border: 1px solid #b4b4b4;
@@ -955,7 +893,6 @@
         position: relative;
     }
     .sec-2_l{
-        height: auto;
         width: 100%;
     }
     .sec-2_r{
@@ -964,8 +901,9 @@
         width: 100%;
         height: auto;
         position: absolute;
-        top: 50%;
+        top: 55%;
         transform: translateY(-50%);
+        display: inline-block;
     }
     .sec-2_r .sec-2_txt{
         padding: 0;
@@ -982,8 +920,7 @@
     .sec-5 .container{
         flex-direction: column;
         height: auto;
-        padding: 100px 60px 0;
-
+        padding: 0 60px;
     }
     .sec-5_l,
     .sec-5_r{
@@ -999,9 +936,8 @@
     .sec-5_r .txt-box{
         padding: 60px 60px 100px;
     }
-    .sec-5_r .txt-box input[type="text"]{
-        width: 100%;
-    }
+    .sec-5_r .txt-box input[type="text"],
+    .input.full,
     .sec-5_btn{
         width: 100%;
     }
@@ -1032,7 +968,9 @@
         height: 70px;
     }
 
-
+    .sec-1_l{
+        height: auto;
+    }
 
 
     .sec-3 .content-inner .shape{
@@ -1214,7 +1152,6 @@
 
 
 @media (max-width:500px){
-    
     .banner section,
     .sec-1 .container,
     .sec-2 .container,
@@ -1222,7 +1159,7 @@
     .sec-4 .container{
         width: 100%;
     }
-    
+
     .title{
         font-size: 6rem;
     }
@@ -1289,6 +1226,9 @@
     }
     .sec-5_l .txt-bottom{
         margin-top: 35px;
+    }
+    .sec-5_r .inner-txt.radio label a{
+        font-size: 0.9rem;
     }
 
 
